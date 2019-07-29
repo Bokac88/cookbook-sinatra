@@ -1,11 +1,8 @@
-<p>
-  I'm in a <em>view</em>!
-</p>
-<%= Time.now %>
 <ul>
-  <% @usernames.each do |username| %>
+  <% @recipes.each do |recipe| %>
     <li>
-      <%= username %>
+      <%= recipe.name %><button>Destroy</button>
     </li>
   <% end %>
 </ul>
+<a href="/create_form">Create</a>
